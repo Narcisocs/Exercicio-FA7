@@ -1,0 +1,10 @@
+<li>
+	<div class="kind-info">
+          <div class="kind"><a>{{ kind.name }}</a></div>
+          <div class="date">{{ kind.date | date }}</div>
+	</div>
+        
+	<div class="tags" ng-repeat="tag in kind.tags">
+		<a>#{{ tag.name }}</a>
+	</div>
+</li>
